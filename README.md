@@ -4,7 +4,7 @@ Script written in Python to integrate the equations of motion of N particles int
 The script computes the equations of motion and use scipy.integrate to integrate them.
 Then it uses matplotlib to visualize the solution.
 
-Example of a simulation:
+Example of simulation:
 https://www.youtube.com/watch?v=ijxwdV_ZWnc
 
 ![N|Solid](/image.png)
