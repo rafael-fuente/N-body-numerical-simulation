@@ -1,12 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import sympy as sp
-import sympy as sp
-
-
-
-
-import numpy as np
 
 # Define a Vector2D class
 
