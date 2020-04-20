@@ -1,4 +1,5 @@
 import numpy as np
+import sympy as sp
 
 # Define a Vector2D class
 
