@@ -167,8 +167,8 @@ for i in range(len(par)):
 
 # ODE solver parameters
 
-tfin = 70.0
-steps = 500
+tfin = 60.0
+steps = 800
 
 
 t = np.linspace(0,tfin,steps+1)
