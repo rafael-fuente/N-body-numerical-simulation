@@ -8,6 +8,7 @@ Then it uses matplotlib to visualize the solution.
 
 1. numpy
 2. scipy
+2. sympy
 3. matplotlib
 
 
