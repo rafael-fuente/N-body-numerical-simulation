@@ -8,3 +8,9 @@ Example of simulation:
 https://www.youtube.com/watch?v=ijxwdV_ZWnc
 
 ![N|Solid](/image.png)
+
+## Requeriments
+
+1. numpy
+2. scipy
+3. matplotlib
