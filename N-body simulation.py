@@ -10,7 +10,7 @@ class Vec2:
 
     # Used for debugging. This method is called when you print an instance  
     def __str__(self):
-        return "(" + str(self.x) + ", " + str(self.y) +  ")"
+        return f"({self.x}, {self.y})"
 
     def get_length(self):
         return np.sqrt(self.x ** 2 + self.y ** 2)
