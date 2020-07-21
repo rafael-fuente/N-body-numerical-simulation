@@ -66,7 +66,7 @@ class Particle():
         self.lamb_vel = Vec2(None,None)
         self.lamd_acc = Vec2(None,None)
         
-        # fpos, lamb_vel = intial position and velocity
+        # initial_pos, initial_vel = intial position and velocity
         self.initial_pos = initial_pos
         self.initial_vel = initial_vel
         
@@ -74,7 +74,7 @@ class Particle():
         self.vf_vel = Vec2(0,0)
         self.vf_acc = Vec2(0,0)
         
-        # sol_pos, sol_vel = position and velocity solution list obtained after the integration
+        # sol_pos, sol_vel = position and velocity solution list obtained after the integration of the equations of motion
         self.sol_pos = Vec2(None,None)
         self.sol_vel = Vec2(None,None)
         
@@ -85,8 +85,8 @@ class Particle():
                 self.acc += (particles[j].pos - self.pos)*particles[j].m*self.G*(1/(((self.pos.x-particles[j].pos.x)**2 + (self.pos.y-particles[j].pos.y)**2)**(3/2)))
 
     # lambdified symbolic functions are faster for numerical calculations. 
-    # I used this approaach (compute first symbolic equations of motion and then compile the function with lambdify) 
-    # to avoid python loops in the vectorfield function which need to be executaded thousand of times and that is slow.
+    # I used this approach (compute first symbolic equations of motion and then compile the function with lambdify) 
+    # to avoid python loops in the vectorfield function which needs to be run thousands of times and that is slow.
 
     def lambdify_vel(self,particles):
         self.lamb_vel.x = sp.lambdify(self.vel.x, self.vel.x)
@@ -105,7 +105,7 @@ class Particle():
 
 
 
-#Input here the initial conditions of the particles and their mass
+#Input here the initial conditions of the particles and their masses
 ################################################################################################################################
 
 #particle list
